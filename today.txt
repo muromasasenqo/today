@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp34
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("vvedite summu: ");
+            double zar = Convert.ToDouble(Console.ReadLine());
+            double[] cena = { 0.45, 2.35, 0.56, 1.34, 5, 1.49, 0.73, 3.94 };
+            double count = 0;
+            string pokupka = "vi mojete kupit";
+            string xl = "xleb,";
+            string mol = "moloko";
+
+            if (zar <= 0 || zar > 14) { Console.WriteLine("vvedite druqie dannie"); }
+             else if (zar>0)
+            {
+                for (int i = 0; i < cena.Length; i++) 
+                { while(count<zar)
+                    {
+                        count += cena[i];
+
+                      
+
+                    }
+
+                  
+
+
+
+
+                }
+                if (count == 0.45)
+                {
+
+                    Console.WriteLine($"{pokupka} {xl}");
+
+
+                }
+                if (count == 2.80)
+                {
+
+                    Console.WriteLine($"{pokupka} {xl} {mol}");
+
+
+
+                }
+
+
+                Console.WriteLine(count);
+       
+
+            }
+             
+
+
+            Console.ReadKey();
+        }
+    }
+}
